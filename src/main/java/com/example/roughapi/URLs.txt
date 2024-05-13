@@ -1,0 +1,8 @@
+http://localhost:8000/app/contact/{id}
+http://localhost:8000/app/contacts
+
+htpp://localhost:8000/app/add
+http://localhost:8000/app/update
+http://localhost:8000/app/delete
+http://localhost:8000/app/uploadPhoto
+http://localhost:8000/app/contact/photo/{filename}

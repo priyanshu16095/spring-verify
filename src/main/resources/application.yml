@@ -1,0 +1,42 @@
+
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: priyanshu16095@gmail.com
+    password: pmuizhunbksleway
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/application?useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    generated-ddl: true
+    show-sql: true
+    hibernate:
+      ddl_auto: update
+    servlet:
+      multipart:
+        enabled: true
+        max-file-size: 1000MB
+        max-request-size: 1000MB
+    mvc:
+      throw-exception-if-no-handler-found: true
+      async:
+        request-timeout: 3600000
+
+
+server:
+  port: 8000
+  error:
+    path: /user/error
+    whitelabel:
+      enabled: false
+
